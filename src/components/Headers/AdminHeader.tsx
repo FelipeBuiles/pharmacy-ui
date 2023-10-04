@@ -11,7 +11,6 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconSearch, IconSettings } from '@tabler/icons-react';
-import { DirectionSwitcher } from '../DirectionSwitcher/DirectionSwitcher';
 import { Logo } from '../Logo/Logo';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 
@@ -40,7 +39,7 @@ export function AdminHeader({ burger }: Props) {
 			{burger && burger}
 			<Logo />
 			<Box sx={{ flex: 1 }} />
-			<TextInput
+			{/* <TextInput
 				placeholder="Search"
 				variant="filled"
 				icon={<IconSearch size="0.8rem" />}
@@ -49,7 +48,7 @@ export function AdminHeader({ burger }: Props) {
 						display: 'none',
 					},
 				})}
-			/>
+			/> */}
 			<ActionIcon onClick={open}>
 				<IconSettings size="1.25rem" />
 			</ActionIcon>
@@ -63,7 +62,6 @@ export function AdminHeader({ burger }: Props) {
 			>
 				<Stack spacing="lg">
 					<ThemeSwitcher />
-					<DirectionSwitcher />
 				</Stack>
 			</Drawer>
 		</Header>

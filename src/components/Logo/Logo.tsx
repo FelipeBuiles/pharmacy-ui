@@ -15,9 +15,9 @@ export const Logo: React.FC<Props> = () => {
 					fw="bolder"
 					size="xl"
 				>
-					Mantine
+					Pharm
 					<Text component="span" fw="normal" c="gray">
-						Admin
+						acy
 					</Text>
 				</Text>
 			</Link>
