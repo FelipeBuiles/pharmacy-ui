@@ -32,13 +32,6 @@ export default function DashboardLayout({ children }: Props) {
 					}
 				/>
 			}
-			footer={
-				<Footer height={50} p="md">
-					<Text w="full" size="sm" align="center" color="gray">
-						CopyRight © 2023 Jotyy
-					</Text>
-				</Footer>
-			}
 			sx={theme => ({
 				backgroundColor:
 					theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],

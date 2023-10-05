@@ -26,7 +26,7 @@ export default function AuthLayout({ children }: Props) {
 						fontWeight: 900,
 					})}
 				>
-					Mantine Admin
+					Pharmacy
 				</Title>
 				<Text color="dimmed" size="sm" align="center" mt={5}>
 					Don&apos;t have an account?{' '}

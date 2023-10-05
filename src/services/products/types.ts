@@ -1,12 +1,13 @@
 export interface Product {
 	id: string;
-	code: string;
 	name: string;
-	description: string;
-	image: string;
-	price: number;
-	category: string;
-	quantity: number;
-	inventoryStatus: string;
-	rating: number;
+	tax: number;
+	barcode: string;
+	group: Group[];
+}
+
+export interface Group {
+	name: string;
+	amount: number;
+	salePrice: number;
 }
