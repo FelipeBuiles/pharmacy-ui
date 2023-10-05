@@ -1,26 +1,21 @@
 import { NavItem } from '@/types/nav-item';
-import {
-	IconComponents,
-	IconDashboard,
-	IconLock,
-	IconMoodSmile,
-} from '@tabler/icons-react';
+import { IconComponents, IconDashboard, IconLock } from '@tabler/icons-react';
 
 export const navLinks: NavItem[] = [
 	{ label: 'Dashboard', icon: IconDashboard, link: '/dashboard' },
 
 	{
-		label: 'Components',
+		label: 'Products',
 		icon: IconComponents,
 		initiallyOpened: true,
 		links: [
 			{
-				label: 'Table',
-				link: '/dashboard/table',
+				label: 'Create',
+				link: '/dashboard/product/create',
 			},
 			{
-				label: 'Form',
-				link: '/dashboard/form',
+				label: 'List',
+				link: '/dashboard/product/list',
 			},
 		],
 	},
@@ -36,17 +31,6 @@ export const navLinks: NavItem[] = [
 			{
 				label: 'Register',
 				link: '/register',
-			},
-		],
-	},
-	{
-		label: 'Sample',
-		icon: IconMoodSmile,
-		initiallyOpened: true,
-		links: [
-			{
-				label: 'Landing',
-				link: '/',
 			},
 		],
 	},
